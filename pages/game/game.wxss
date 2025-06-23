@@ -1,0 +1,148 @@
+/* pages/game/game.wxss */
+page {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-container {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4FC3F7 0%, #BA68C8 100%);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* 自定义导航栏适配 */
+.game-container .wx-nav-bar {
+  background: transparent !important;
+}
+
+/* 顶部信息 */
+.top-info {
+  position: absolute;
+  top: 180rpx; /* 适配自定义导航栏，可按需调整 */
+  left: 32rpx;
+  right: 32rpx;
+  z-index: 10;
+}
+
+.timer-bar {
+  width: 100%;
+  height: 20rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.timer-progress {
+  height: 100%;
+  border-radius: 10rpx;
+  transition: width 1s linear;
+  background: linear-gradient(90deg, #00E676, #CDDC39);
+}
+
+.timer-progress.warning {
+  background: linear-gradient(90deg, #FFC107, #F44336);
+}
+
+.score-card {
+  position: absolute;
+  top: 40rpx;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8rpx 24rpx;
+  border-radius: 24rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.score-value {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 16rpx;
+}
+
+/* 词语区域 */
+.word-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  z-index: 1;
+}
+
+.word-area {
+  font-size: 100rpx;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 40rpx;
+  color: #fff;
+  text-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.word-area.out {
+  transform: translateY(-50rpx) scale(0.8);
+  opacity: 0;
+}
+
+.word-area.in {
+  transform: translateY(50rpx) scale(0.8);
+  opacity: 0;
+}
+
+/* 操作区域 */
+.controls-container {
+  width: 100%;
+  padding: 40rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 20;
+  flex-shrink: 0;
+}
+
+.control-btn {
+  width: 280rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.1s ease;
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.correct-btn {
+  background: #8BC34A; /* 亮绿 */
+  box-shadow: 0 8rpx 24rpx rgba(139, 195, 74, 0.4);
+}
+
+.skip-btn {
+  background: #FF9800; /* 橙色 */
+  box-shadow: 0 8rpx 24rpx rgba(255, 152, 0, 0.4);
+}
+
+.control-icon {
+  font-size: 40rpx;
+}

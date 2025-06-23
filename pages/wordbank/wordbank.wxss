@@ -1,0 +1,65 @@
+/* pages/wordbank/wordbank.wxss */
+page {
+  background: #f7f8fa;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wordbank-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32rpx;
+  overflow-y: auto;
+}
+.wordbank-card {
+  width: 45%;
+  height: 240rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 4rpx solid transparent;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+.wordbank-card.selected {
+  border-color: #81D4FA;
+  transform: translateY(-8rpx);
+  box-shadow: 0 16rpx 32rpx rgba(129, 212, 250, 0.4);
+}
+.card-icon {
+  font-size: 80rpx;
+  margin-bottom: 16rpx;
+}
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.footer {
+  width: 100%;
+  padding: 24rpx 32rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-top: 1rpx solid #eee;
+}
+.confirm-btn {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  background: #81D4FA;
+  color: white;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  transition: transform 0.1s;
+}
+.confirm-btn:active {
+  transform: scale(0.98);
+  background: #6abde0;
+}

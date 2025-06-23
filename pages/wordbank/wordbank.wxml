@@ -1,0 +1,12 @@
+<navigation-bar title="选择词库" back="true" color="white" background="#81D4FA"></navigation-bar>
+<view class="wordbank-container">
+  <block wx:for="{{wordbanks}}" wx:key="name">
+    <view class="wordbank-card {{selected === index ? 'selected' : ''}}" bindtap="selectWordbank" data-index="{{index}}">
+      <view class="card-icon">{{item.icon}}</view>
+      <view class="card-title">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<view class="footer">
+  <button class="confirm-btn" bindtap="confirm">开始游戏</button>
+</view> 

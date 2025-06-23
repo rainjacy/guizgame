@@ -1,0 +1,32 @@
+<navigation-bar title="游戏规则" back="true" color="black" background="transparent"></navigation-bar>
+<view class="rule-container">
+  <view class="header-image-wrapper">
+    <view class="header-icon">📜</view>
+    <view class="header-title">游戏规则</view>
+  </view>
+
+  <view class="rules-list">
+    <view class="rule-item">
+      <view class="rule-number">1.</view>
+      <view class="rule-text">选择一个词库，点击"开始游戏"。</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-number">2.</view>
+      <view class="rule-text">一名玩家手持手机，屏幕面向其他玩家，自己不能看屏幕。</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-number">3.</view>
+      <view class="rule-text">其他玩家根据屏幕上显示的词语，通过语言或动作进行描述提示。</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-number">4.</view>
+      <view class="rule-text">猜对后，持手机的玩家点击<text class="highlight-green">【正确】</text>按钮得分；如果想跳过，则点击<text class="highlight-orange">【跳过】</text>按钮。</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-number">5.</view>
+      <view class="rule-text">在倒计时结束前，尽可能猜对更多的词语！</view>
+    </view>
+  </view>
+
+  <button class="back-btn" bindtap="goBack">我明白了</button>
+</view> 

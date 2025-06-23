@@ -1,0 +1,30 @@
+<navigation-bar title="疯狂猜词" back="true" color="white" background="transparent"></navigation-bar>
+<view class="game-container">
+  <!-- 顶部信息：倒计时条和分数 -->
+  <view class="top-info">
+    <view class="timer-bar">
+      <view class="timer-progress {{timer <= 10 ? 'warning' : ''}}" style="width: {{(timer/60)*100}}%;"></view>
+    </view>
+    <view class="score-card">
+      <text>得分</text>
+      <text class="score-value">{{score}}</text>
+    </view>
+  </view>
+
+  <!-- 词语区域 -->
+  <view class="word-wrapper">
+    <view class="word-area {{wordAnimationClass}}">{{currentWord}}</view>
+  </view>
+
+  <!-- 操作区域 -->
+  <view class="controls-container">
+    <view class="control-btn correct-btn" bindtap="onCorrect">
+      <text class="control-icon">✅</text>
+      <text>正确</text>
+    </view>
+    <view class="control-btn skip-btn" bindtap="onSkip">
+      <text class="control-icon">❌</text>
+      <text>跳过</text>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,29 @@
+<navigation-bar title="本轮结果" back="false" color="black" background="transparent"></navigation-bar>
+<view class="result-container">
+  <!-- 得分展示卡片 -->
+  <view class="score-panel">
+    <view class="score-title">本轮得分</view>
+    <view class="score-value">🎉 {{score}}</view>
+  </view>
+
+  <!-- 猜对词语列表 -->
+  <view class="words-panel">
+    <view class="words-title" wx:if="{{correctWords.length > 0}}">猜对的词语</view>
+    <scroll-view class="word-list-scroll" scroll-y>
+      <view class="word-grid">
+        <block wx:for="{{correctWords}}" wx:key="index">
+          <view class="word-item">✅ {{item}}</view>
+        </block>
+      </view>
+      <view class="no-words" wx:if="{{correctWords.length === 0}}">
+        <text>一个都没猜对，再接再厉哦！💪</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="actions-panel">
+    <button class="action-btn restart-btn" bindtap="restart">再来一局</button>
+    <button class="action-btn share-btn" open-type="share">分享战绩</button>
+  </view>
+</view> 

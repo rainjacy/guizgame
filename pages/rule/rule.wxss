@@ -1,0 +1,95 @@
+/* pages/rule/rule.wxss */
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rule-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #FFFDE7; /* 奶黄 */
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.header-image-wrapper {
+  text-align: center;
+  margin-bottom: 60rpx;
+  flex-shrink: 0;
+}
+
+.header-icon {
+  font-size: 120rpx;
+  line-height: 1;
+  margin-bottom: 24rpx;
+}
+
+.header-title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #FF9800; /* 橙色 */
+}
+
+.rules-list {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 40rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.05);
+  flex-grow: 1; /* 让规则列表填充剩余空间 */
+  overflow-y: auto; /* 如果内容超长，允许滚动 */
+}
+
+.rule-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32rpx;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 1.6;
+}
+
+.rule-item:last-child {
+  margin-bottom: 0;
+}
+
+.rule-number {
+  font-weight: bold;
+  color: #FFC107; /* 金黄 */
+  margin-right: 16rpx;
+}
+
+.rule-text {
+  flex: 1;
+}
+
+.highlight-green {
+  color: #8BC34A;
+  font-weight: bold;
+}
+
+.highlight-orange {
+  color: #FF9800;
+  font-weight: bold;
+}
+
+.back-btn {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  margin-top: 60rpx;
+  background: #FFC107;
+  color: white;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 8rpx 24rpx rgba(255, 193, 7, 0.3);
+  transition: transform 0.1s;
+  flex-shrink: 0;
+}
+
+.back-btn:active {
+  transform: scale(0.96);
+}
