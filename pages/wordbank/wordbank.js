@@ -15,8 +15,10 @@ Page({
     // Create random word list
     const allWords = wordbanks.reduce((acc, bank) => acc.concat(bank.words), []);
     const randomWords = { name: '随机', icon: '🎲', words: allWords };
+    const allBanks = [...wordbanks, randomWords];
     this.setData({
-      wordbanks: [randomWords, ...wordbanks]
+      wordbanks: allBanks,
+      selected: allBanks.length - 1 // 默认选中最后一个（随机）
     });
   },
   selectWordbank(e) {

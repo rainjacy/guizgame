@@ -26,6 +26,8 @@ page {
   border: 4rpx solid transparent;
   box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.05);
   transition: all 0.2s ease-in-out;
+  font-size: 40rpx;
+  font-weight: bold;
 }
 .wordbank-card.selected {
   border-color: #81D4FA;
@@ -51,15 +53,20 @@ page {
 .confirm-btn {
   width: 100%;
   height: 96rpx;
-  line-height: 96rpx;
-  background: #81D4FA;
-  color: white;
-  border-radius: 48rpx;
-  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF4081;
+  color: #fff;
+  font-size: 40rpx;
   font-weight: bold;
+  border-radius: 48rpx;
+  box-shadow: 0 8rpx 24rpx #ffb6d5;
+  margin-top: 40rpx;
   transition: transform 0.1s;
+  border: none;
+  letter-spacing: 2rpx;
 }
 .confirm-btn:active {
-  transform: scale(0.98);
-  background: #6abde0;
+  transform: scale(0.97);
 }

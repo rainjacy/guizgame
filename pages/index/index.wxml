@@ -1,7 +1,6 @@
 <!--index.wxml-->
-<navigation-bar title="疯狂猜词" back="false" color="black" background="#FFEB3B"></navigation-bar>
 <view class="index-container">
-  <view class="logo">🎉 疯狂猜词</view>
+  <view class="logo">🤪 疯狂 <text class="logo-highlight">猜词</text> 🧠</view>
   <button class="start-btn" bindtap="goWordbank">开始游戏</button>
   <button class="rule-btn" bindtap="goRule">查看规则</button>
   <view class="copyright">© 2024 疯狂猜词小组</view>

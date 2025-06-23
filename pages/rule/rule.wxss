@@ -77,17 +77,21 @@ page {
 .back-btn {
   width: 100%;
   height: 96rpx;
-  line-height: 96rpx;
-  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #FFC107;
   color: white;
   border-radius: 48rpx;
-  font-size: 32rpx;
+  font-size: 40rpx;
   font-weight: bold;
   border: none;
   box-shadow: 0 8rpx 24rpx rgba(255, 193, 7, 0.3);
   transition: transform 0.1s;
   flex-shrink: 0;
+  margin-top: 60rpx;
+  line-height: 1;
+  letter-spacing: 2rpx;
 }
 
 .back-btn:active {

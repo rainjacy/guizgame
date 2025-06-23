@@ -1,5 +1,6 @@
 <navigation-bar title="疯狂猜词" back="true" color="white" background="transparent"></navigation-bar>
 <view class="game-container">
+  <view class="game-title">疯狂猜词</view>
   <!-- 顶部信息：倒计时条和分数 -->
   <view class="top-info">
     <view class="timer-bar">
@@ -14,6 +15,10 @@
   <!-- 词语区域 -->
   <view class="word-wrapper">
     <view class="word-area {{wordAnimationClass}}">{{currentWord}}</view>
+    <view class="word-en-area">
+      <text class="word-en">{{currentEn}}</text>
+      <text class="word-phonetic">{{currentPhonetic}}</text>
+    </view>
   </view>
 
   <!-- 操作区域 -->

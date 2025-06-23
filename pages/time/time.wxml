@@ -1,0 +1,16 @@
+<page-meta>
+  <navigation-bar title="答题时间" back="true" color="black" background="#81D4FA"></navigation-bar>
+</page-meta>
+<view class="time-container">
+  <view class="title">请选择每个单词的答题时间</view>
+  <view class="time-options">
+    <block wx:for="{{timeOptions}}" wx:key="value">
+      <view class="time-card {{selected === index ? 'selected' : ''}}" bindtap="selectTime" data-index="{{index}}">
+        <view class="time-value">{{item.value}}<text class="unit">秒</text></view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="footer">
+  <button class="confirm-btn" bindtap="confirm">确认时间</button>
+</view> 

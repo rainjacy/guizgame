@@ -97,12 +97,15 @@ page {
 .action-btn {
   flex: 1;
   height: 96rpx;
-  line-height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 48rpx;
-  font-size: 32rpx;
+  font-size: 40rpx;
   font-weight: bold;
   border: none;
   transition: transform 0.1s;
+  letter-spacing: 2rpx;
 }
 
 .action-btn:active {

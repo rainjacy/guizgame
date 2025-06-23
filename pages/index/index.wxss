@@ -18,40 +18,50 @@ page {
   padding: 0 32rpx;
 }
 .logo {
-  font-size: 48rpx;
-  font-weight: bold;
+  font-size: 54rpx;
+  font-weight: 900;
   margin-bottom: 80rpx;
-  color: #FF4081;
-  text-shadow: 2rpx 4rpx 8rpx #fffde7;
+  color: #333;
+  text-shadow: 0 2rpx 8rpx #fffde7;
+  letter-spacing: 2rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  padding: 16rpx 0 12rpx 0;
+  box-sizing: border-box;
+  background: #FFF9C4;
+  display: inline-block;
 }
-.start-btn {
+.logo-highlight {
+  color: #2196F3;
+  font-weight: 900;
+  font-size: 60rpx;
+  margin: 0 4rpx;
+}
+.start-btn, .rule-btn {
   width: 80vw;
-  margin-bottom: 32rpx;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #FF4081;
   color: #fff;
-  font-size: 36rpx;
-  border-radius: 48rpx;
+  font-size: 40rpx;
   font-weight: bold;
+  border-radius: 48rpx;
   box-shadow: 0 8rpx 24rpx #ffb6d5;
+  margin-bottom: 32rpx;
   transition: transform 0.1s;
+  border: none;
+  letter-spacing: 2rpx;
 }
-.start-btn:active {
+.start-btn:active, .rule-btn:active {
   transform: scale(0.96);
 }
 .rule-btn {
-  width: 80vw;
   background: #fff;
   color: #FF4081;
-  font-size: 32rpx;
-  border-radius: 48rpx;
   border: 2rpx solid #FF4081;
-  margin-bottom: 80rpx;
-  font-weight: bold;
   box-shadow: 0 4rpx 12rpx #ffe0ec;
-  transition: transform 0.1s;
-}
-.rule-btn:active {
-  transform: scale(0.96);
 }
 .copyright {
   position: absolute;
