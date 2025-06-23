@@ -1,7 +1,15 @@
 <!--index.wxml-->
+<view class="index-bg"></view>
 <view class="index-container">
-  <view class="logo">🤪 疯狂 <text class="logo-highlight">猜词</text> 🧠</view>
-  <button class="start-btn" bindtap="goWordbank">开始游戏</button>
-  <button class="rule-btn" bindtap="goRule">查看规则</button>
-  <view class="copyright">© 2024 疯狂猜词小组</view>
+  <image class="index-illust" src="/assets/image/cover.jpg" mode="widthFix"></image>
+  <view class="logo-area">
+    <view class="logo">🤪 疯狂猜词 🧠</view>
+    <view class="fun-desc">和朋友一起，疯狂猜词，笑到停不下来！</view>
+  </view>
+  <view class="btn-group">
+    <button class="start-btn" bindtap="goWordbank">开始游戏</button>
+    <button class="rule-btn" bindtap="goRule">查看规则</button>
+  </view>
+  <view class="fun-desc">快来挑战你的词汇量和表演力吧！</view>
+  <view class="copyright">© 2025 疯狂猜词小组</view>
 </view>

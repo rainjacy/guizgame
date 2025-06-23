@@ -1,12 +1,10 @@
 Page({
   data: {
     timeOptions: [
-      { value: 15 },
-      { value: 30 },
       { value: 60 },
       { value: 90 },
-      { value: 180 },
-      { value: 360 }
+      { value: 120 },
+      { value: 240 }
     ],
     selected: 2 // 默认选中60秒
   },

@@ -53,7 +53,7 @@ page {
 
 .score-card {
   position: absolute;
-  top: 40rpx;
+  top: 120rpx;
   right: 0;
   background: rgba(255, 255, 255, 0.2);
   padding: 8rpx 24rpx;
@@ -188,4 +188,15 @@ page {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 90vw;
+}
+
+.timer-num {
+  width: 100%;
+  text-align: center;
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2rpx 8rpx #4FC3F7, 0 2rpx 8rpx #0002;
+  margin-bottom: 8rpx;
+  letter-spacing: 2rpx;
 }

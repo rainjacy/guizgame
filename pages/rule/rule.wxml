@@ -1,4 +1,4 @@
-<navigation-bar title="游戏规则" back="true" color="black" background="transparent"></navigation-bar>
+<navigation-bar title="游戏规则" back="false" color="black" background="transparent"></navigation-bar>
 <view class="rule-container">
   <view class="header-image-wrapper">
     <view class="header-icon">📜</view>

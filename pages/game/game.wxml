@@ -1,10 +1,11 @@
 <navigation-bar title="疯狂猜词" back="true" color="white" background="transparent"></navigation-bar>
 <view class="game-container">
-  <view class="game-title">疯狂猜词</view>
+  <!-- <view class="game-title">疯狂猜词</view> -->
   <!-- 顶部信息：倒计时条和分数 -->
   <view class="top-info">
+    <view class="timer-num">{{timer}}s</view>
     <view class="timer-bar">
-      <view class="timer-progress {{timer <= 10 ? 'warning' : ''}}" style="width: {{(timer/60)*100}}%;"></view>
+      <view class="timer-progress {{timer <= 10 ? 'warning' : ''}}" style="width: {{(timer/wordTime)*100}}%;"></view>
     </view>
     <view class="score-card">
       <text>得分</text>
